@@ -239,3 +239,18 @@ while(right < len(list_values)):
         right += 1
         
 print(list_values)
+
+
+
+# find second max number without using sort and max
+list_val = [67,87,98,99,960,67,980]
+first_max = list_val[0]
+second_max = 0
+i = list_val[1]
+for i in list_val:
+    if(i > first_max ):
+        second_max = first_max
+        first_max = i
+    elif (i > second_max and i != first_max):
+        second_max = i
+print(second_max)

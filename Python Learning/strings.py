@@ -84,7 +84,7 @@ print(a.rfind("v")) # it checks from right to left , inbuilt method to find the 
 #Index  - str.index() -  actual method - str.index(prefix, start, end)  - same like find but if val not found it will throw an error instead of returning -1
 print(a.index("v"))   #it checks from left to right , inbuilt method to find the index of the first occurrence of a substring in a string. In this case, it will return 0 because the first occurrence of "v" in the string "vishnuvardhan" is at index 0.
 print(a.index("v",1))   #it checks from left to right , inbuilt method to find the index of the first occurrence of a substring in a string starting from index 1. In this case, it will return 6 because the first occurrence of "v" in the string "vishnuvardhan" starting from index 1 is at index 6.
-print(a.index("w")) #throws an error because the substring "w" is not found in the string "vishnuvardhan".
+#print(a.index("w")) #throws an error because the substring "w" is not found in the string "vishnuvardhan".
 print(a.rindex("v")) # it checks from right to left , inbuilt method to find the index of the last occurrence of a substring in a string. In this case, it will return 6 because the last occurrence of "v" in the string "vishnuvardhan" is at index 6.
 
 
@@ -100,3 +100,15 @@ for i in name:                      #length = len(name)
         count1 += 1                 #   count1 += 1
 
 print(count1)
+
+
+
+#convert a string to integer.
+val = int("vishnu",36)
+print(val)
+
+#string can also be stored in multiline using triple quotes. It can be used to store a string in multiple lines. It can also be used to store a string in a single line with line breaks. It can also be used to store a string in a single line with line breaks and indentation. It can also be used to store a string in a single line with line breaks and indentation and special characters. It can also be used to store a string in a single line with line breaks and indentation and special characters and escape sequences. It can also be used to store a string in a single line with line breaks and indentation and special characters and escape sequences and unicode characters. It can also be used to store a string in a single line with line breaks and indentation and special characters and escape sequences and unicode characters and raw strings. It can also be used to store a string in a single line with line breaks and indentation and special characters and escape sequences and unicode characters and raw strings and formatted strings. It can also be used to store a string in a single line with line breaks and indentation and special characters and escape sequences and unicode characters and raw strings and formatted strings and f-strings. It can also be used to store a string in a single line with line breaks and indentation and special characters and escape sequences and unicode characters and raw strings and formatted strings and f-strings.
+val = """This is a multiline string.
+It can be used to store a string in multiple lines.
+It can also be used to store a string \n in a single line with line breaks."""
+print(val)

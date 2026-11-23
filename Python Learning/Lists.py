@@ -62,6 +62,14 @@ b[2:4] = [100,200]  # Replaces elements at index 2 and 3 with [100, 200]
 print(b)
 
 
+#unpacking list
+a = [1,2,3]
+x,y,z = a
+print(x)
+print(y)
+print(z)
+
+
 
 
 #Problems on list
@@ -204,7 +212,7 @@ problem ---  level : 4 star problem
 
 
 '''
-product_records = []
+
 
 
 def add_products(product_name = "NA",price = 0,quantity = 0):
@@ -249,7 +257,7 @@ def display_inventory():
     for i in range(len(product_records)):
         print(*product_records[i])
 
-
+product_records = []
 while(True):
     Op_input = input("Enter your operation : ")
     Op_input = Op_input.lower()

@@ -108,7 +108,7 @@ print(type(a))  #results type of a
 #If you want to convert a integer number to character, you can use the chr() function. For example, chr(97) will return "a", which is the character representation of the ASCII value 97.
 #If you need to convert that string to a number, you can use the int() function with base 36. For example, int("a", 36) will return 10, which is the base 36 representation of "a".
 
-from os import name
+from os import name  
 import sys
 
 z = 3 + 4j
@@ -118,6 +118,9 @@ print(len(k))
 print(sys.getsizeof(k))
 print(sys.getsizeof(z))
 print(sys.getsizeof(3))
+
+print(sys.getsizeof(""))  #empty str size is 49
+print(sys.getsizeof("abc"))  #here str has 3 characters so size is 52  (49 + 3 = 52)
 
 m = ("app", "ban", "cat")
 n = ("app", "ban", "cat")
@@ -151,3 +154,7 @@ for i in range(10):
 
 import sys
 print(sys.getsizeof(name))   #returns the size of the object in bytes. The size of an object is the amount of memory that it occupies in the computer's memory. The size of an object can vary depending on the type of object and the data that it contains. For example, a string object will typically be larger than an integer object because it contains more data. The size of an object can also vary depending on the implementation of Python that you are using. For example, the size of an object may be different in CPython than it is in PyPy.
+print(sys.version) #returns the version of the Python interpreter that is currently running. The version of Python is important because it determines which features and libraries are available to you. For example, some features may only be available in Python 3.6 or later, while others may only be available in Python 2.7 or earlier. The version of Python can also affect the performance of your code, as newer versions of Python may have optimizations that make your code run faster.
+
+
+

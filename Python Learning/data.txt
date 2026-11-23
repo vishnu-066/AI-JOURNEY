@@ -1,0 +1,10 @@
+Intro
+Good morning everyone. I’m Vishnu Vardhan, a recent graduate with a strong interest in building technology that solves real business problems.
+
+I recently completed a **3-month internship at WizCommerce as an Implementation Intern**, where I got exposure to a SaaS environment and learned how technical solutions are connected with actual customer and business requirements. That experience made me particularly interested in **enterprise technology and workflow automation**.
+
+On the technical side, I have a strong foundation in **Java, SQL, JavaScript, and web technologies**, along with problem-solving and data structures. I’ve applied these skills through projects like **IntelliDesk**, an AI-powered IT Service Management platform, and **WorkFlowX**, an enterprise workflow automation system.
+
+What attracts me to ServiceNow is that it goes beyond just developing software—it connects **people, processes, data, and automation** to solve enterprise problems. I see that as the direction in which I want to grow, and I’m excited to learn, contribute, and build my career in this space.
+
+Thank you.

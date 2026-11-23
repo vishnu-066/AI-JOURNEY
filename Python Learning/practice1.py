@@ -254,3 +254,173 @@ for i in list_val:
     elif (i > second_max and i != first_max):
         second_max = i
 print(second_max)
+
+
+#printing all the elements in list but on condition the loop needs to excicute half of length of the list
+import math
+list_val = [5,6,90,765,76,8,7]
+current_point = 0
+length = len(list_val)
+for i in range(math.ceil(length/2)):
+    print(f"{i} -> {list_val[current_point]}")
+    current_point += 1
+    if(current_point>= length):
+        break
+    else:
+        print(f"{i} -> {list_val[current_point]}")
+        current_point += 1
+
+
+
+#binary search
+
+list_values = list(range(2,100,3))
+
+target = int(input("Enter the number you want to search : "))
+low = 0
+high = (len(list_values))-1
+
+while low <= high:
+    mid = low + ((high-low)//2)
+    if(target < list_values[0] or target > list_values[(len(list_values)-1)]):
+         print("Element not in list")
+         break
+    if(target == list_values[0]):
+
+        print("0th index")
+        break
+    if(target == list_values[(len(list_values))-1]):
+        print(f"{len(list_values)-1}th index")
+        break
+
+    if(target == list_values[mid]):
+         print(f"{mid} th index")
+         break
+
+    elif(target > list_values[mid]):
+         low = mid + 1
+         
+
+    elif(target < list_values[mid]):
+         high = mid - 1
+
+    
+else:
+     print("Element not in list")  
+    
+
+
+
+
+'''Problem 1 — Easy: Count Even Numbers
+
+Write a function count_even(numbers) that takes a list of integers and returns the number of even numbers in the list.
+
+Requirements:
+
+Use a for loop.
+Use a function.
+Do not use Python's built-in count().'''
+
+def count_even(numbers):
+    count = 0
+    for n in numbers:
+        if n % 2 == 0:
+            count += 1
+    return count
+
+list_values = []
+print("Type done after completion for you inputs")
+while(True):
+  num = input("Enter your values : ")
+  if(num == "done"):
+    break
+  else:
+    list_values.append(int(num))
+
+print(count_even(list_values))
+
+
+'''Problem 2 — Medium: Find the Largest Number
+
+Write a function find_largest(numbers) that takes a list of integers and returns the largest number.
+
+Requirements:
+
+Use a for loop.
+Use a function.
+Do not use max().
+Assume the list contains at least one number.'''
+
+
+list_values = []
+print("Type done after completion for you inputs")
+while(True):
+  num = input("Enter your values : ")
+  if(num == "done"):
+    break
+  else:
+    list_values.append(int(num))
+
+def find_largest(numbers):
+    largest = numbers[0]
+    for n in numbers:
+        if n > largest:
+            largest = n
+    return largest
+
+
+if(len(list_values) == 0):
+    print("you have entered zero values....")
+    
+else:
+  print(find_largest(list_values))
+
+
+
+'''Problem 3 — Hard: Remove Duplicates
+Write a function remove_duplicates(numbers) that takes a list and returns a new list containing only unique values, while preserving their original order.
+
+Requirements:
+Use a for loop.
+Use a function.
+Do not use set().'''
+
+list_values = []
+print("Type done after completion for you inputs")
+while(True):
+  num = input("Enter your values : ")
+  if(num == "done"):
+    break
+  else:
+    list_values.append(int(num))
+
+def remove_duplicates(numbers):
+    filtered_list = []
+    for i in numbers:
+        if i not in filtered_list:
+            filtered_list.append(i)
+    return filtered_list
+
+print(remove_duplicates(list_values))
+
+
+
+
+#File upload - pick file extension and check if its a valid file or not
+import time
+file_name = input("Enter your file name : ")
+
+extension_list = (".txt",".csv",".excl",".doc",".pdf")
+file_extension = ""
+for i in range(file_name.rfind("."),len(file_name)):
+  file_extension += file_name[i]
+
+if(file_extension in extension_list):
+  for i in range(1,11):
+    print(f"\rUploading {i*10}%",end = "",flush = True)
+    time.sleep(0.2)
+  print()
+  print("File successfully uploaded.......")
+else:
+  print("File format is not suppourted........")

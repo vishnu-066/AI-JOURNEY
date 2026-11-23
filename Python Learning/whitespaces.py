@@ -14,7 +14,7 @@ print("vishnu\"vardhan")   # double quote between vishnu and vardhan
 print("vishnu\?vardhan")   # question mark between vishnu and vardhan
 
 
-from distro import name
+from os import name
 
 
 name = "Vishnu vardhan reddy"
@@ -22,3 +22,6 @@ print(name)
 print(name.lstrip())
 print(name.rstrip())
 print(name.strip())
+
+
+print("vishnu\bvardhan")
